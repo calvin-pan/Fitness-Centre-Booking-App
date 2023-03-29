@@ -1,0 +1,12 @@
+Reminders - Alex
+
+Update edit class methods in instructor dialogs and homeactivity to account
+For new ENROLLMENT database in members. When a class is edited by an instructor
+The change should be consistent through all currently enrolled members.
+Issues to think around: What happens if an edit puts a members classes in conflict?
+Solution 1: drop the class that was just edited
+- remove members enrollment record (since capacity, enrollment etc is all tracked through
+Queries of the same database, should only need to make this change to keep
+Consistency).
+
+**Instructors should not be able to lower class capacity below the number of currently enrolled members.

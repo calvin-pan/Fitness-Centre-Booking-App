@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_dialog_view_classes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLASS INFORMATION"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textAlignment="center">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title_dialog_view_classes">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Class Name:"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:layout_weight=".50">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_class_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Class Name here"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_weight=".50">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linLayout1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="Instructor Name:"
+            android:textSize="16sp"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_instructor_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Instructor Name here"
+            android:textAlignment="center"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linLayout2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="Class Day:"
+            android:textSize="16sp"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_class_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Class Day here"
+            android:textAlignment="center"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linLayout6">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Class Time:"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_class_length"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Class Length here"
+            android:textAlignment="center"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linLayout3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="Difficulty Level:"
+            android:textSize="16sp"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_difficulty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Difficulty here"
+            android:textAlignment="center"
+            android:textSize="16sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linLayout4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:text="Capacity:"
+            android:textSize="16sp"
+            android:padding="10dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_capacity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:padding="10dp"
+            android:text="Capacity here"
+            android:textAlignment="center"
+            android:textSize="16sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

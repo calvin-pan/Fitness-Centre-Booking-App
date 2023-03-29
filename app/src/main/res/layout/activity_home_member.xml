@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sky_blue"
+    android:orientation="vertical"
+    tools:context=".MemberHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <TextView
+            android:id="@+id/textView_search_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Search Classes"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_class_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class Name:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/editText_instructor_class_name"
+                    android:layout_width="240dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="Enter Class Name"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp">
+
+                </EditText>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textView_instructor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day of the Week:"
+                    android:textColor="@color/white"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/editText_day_of_the_week"
+                    android:layout_width="240dp"
+                    android:layout_height="48dp"
+                    android:ems="10"
+                    android:hint="Enter Day of the Week"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp">
+
+                </EditText>
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/button_findByClassName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/light_orange"
+                    android:padding="10dp"
+                    android:text="Find by Class Name" />
+
+                <Button
+                    android:id="@+id/button_findByDayOfTheWeek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_orange"
+                    android:padding="10dp"
+                    android:text="Find By Day of the Week" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_viewAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/light_orange"
+            android:text="View All Classes" />
+
+        <Button
+            android:id="@+id/button_viewEnrolledClasses"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/light_orange"
+            android:text="View Enrolled Classes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_scheduled_classes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="Search Results"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/default_displays_all_classes_tap_on_entry_to_view_details_tap_view_all_classes_button_to_reset"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text='Tap "View All Classes" button to return to Default'
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listview_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>
